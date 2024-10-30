@@ -3190,28 +3190,28 @@ Attaching package: &#39;lubridate&#39;</code></pre>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb18"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Clean the name column</span></span>
 <span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a>df<span class="sc">$</span>cleaned_name <span class="ot">&lt;-</span> <span class="fu">tolower</span>(df<span class="sc">$</span>name)</span>
-<span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a>df<span class="sc">$</span>cleaned_name <span class="ot">&lt;-</span> <span class="fu">gsub</span>(<span class="st">&quot;Dr</span><span class="sc">\\</span><span class="st">.|Mr</span><span class="sc">\\</span><span class="st">.&quot;</span>, <span class="st">&quot;&quot;</span>, df<span class="sc">$</span>cleaned_name)</span>
+<span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a>df<span class="sc">$</span>cleaned_name <span class="ot">&lt;-</span> <span class="fu">gsub</span>(<span class="st">&quot;Dr</span><span class="sc">\\</span><span class="st">.|Mr</span><span class="sc">\\</span><span class="st">.|mr</span><span class="sc">\\</span><span class="st">.|dr</span><span class="sc">\\</span><span class="st">.&quot;</span>, <span class="st">&quot;&quot;</span>, df<span class="sc">$</span>cleaned_name)</span>
 <span id="cb18-4"><a href="#cb18-4" aria-hidden="true" tabindex="-1"></a>df<span class="sc">$</span>cleaned_name <span class="ot">&lt;-</span> <span class="fu">trimws</span>(df<span class="sc">$</span>cleaned_name)</span>
 <span id="cb18-5"><a href="#cb18-5" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb18-6"><a href="#cb18-6" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(df<span class="sc">$</span>cleaned_name)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code> [1] &quot;jessica myers&quot;          &quot;mitchell owens&quot;         &quot;jeffrey morris&quot;        
- [4] &quot;dr. craig atkinson&quot;     &quot;mitchell owens&quot;         &quot;danny anderson&quot;        
- [7] &quot;danny anderson&quot;         &quot;danny morrison&quot;         &quot;karen williams&quot;        
-[10] &quot;lawrence bernard&quot;       &quot;jane wright&quot;            &quot;jamie potts&quot;           
-[13] &quot;mr. michael johnson md&quot; &quot;matthew vasquez&quot;        &quot;ashley mitchell&quot;       
-[16] &quot;lori patton&quot;            &quot;dr. craig atkinson&quot;     &quot;matthew harris&quot;        
-[19] &quot;ashley howard&quot;          &quot;matthew harris&quot;         &quot;robert sanchez&quot;        
-[22] &quot;matthew vasquez&quot;        &quot;mr. michael johnson md&quot; &quot;tara ward&quot;             
-[25] &quot;catherine walker&quot;       &quot;joseph clarke&quot;          &quot;jeffrey morris&quot;        
-[28] &quot;joseph clarke&quot;          &quot;matthew vasquez&quot;        &quot;matthew vasquez&quot;       
-[31] &quot;daniel gonzalez&quot;        &quot;calvin melton&quot;          &quot;jessica myers&quot;         
-[34] &quot;daniel reynolds&quot;        &quot;leslie freeman&quot;         &quot;daniel reynolds&quot;       
-[37] &quot;daniel reynolds&quot;        &quot;daniel reynolds&quot;        &quot;ashley howard&quot;         
-[40] &quot;daniel gonzalez&quot;        &quot;jamie potts&quot;            &quot;daniel gonzalez&quot;       
-[43] &quot;hayley griffin&quot;         &quot;lawrence bernard&quot;       &quot;danny anderson&quot;        
-[46] &quot;mr. michael johnson md&quot; &quot;jessica myers&quot;          &quot;ashley howard&quot;         
-[49] &quot;matthew vasquez&quot;        &quot;dr. craig atkinson&quot;    </code></pre>
+<pre><code> [1] &quot;jessica myers&quot;      &quot;mitchell owens&quot;     &quot;jeffrey morris&quot;    
+ [4] &quot;craig atkinson&quot;     &quot;mitchell owens&quot;     &quot;danny anderson&quot;    
+ [7] &quot;danny anderson&quot;     &quot;danny morrison&quot;     &quot;karen williams&quot;    
+[10] &quot;lawrence bernard&quot;   &quot;jane wright&quot;        &quot;jamie potts&quot;       
+[13] &quot;michael johnson md&quot; &quot;matthew vasquez&quot;    &quot;ashley mitchell&quot;   
+[16] &quot;lori patton&quot;        &quot;craig atkinson&quot;     &quot;matthew harris&quot;    
+[19] &quot;ashley howard&quot;      &quot;matthew harris&quot;     &quot;robert sanchez&quot;    
+[22] &quot;matthew vasquez&quot;    &quot;michael johnson md&quot; &quot;tara ward&quot;         
+[25] &quot;catherine walker&quot;   &quot;joseph clarke&quot;      &quot;jeffrey morris&quot;    
+[28] &quot;joseph clarke&quot;      &quot;matthew vasquez&quot;    &quot;matthew vasquez&quot;   
+[31] &quot;daniel gonzalez&quot;    &quot;calvin melton&quot;      &quot;jessica myers&quot;     
+[34] &quot;daniel reynolds&quot;    &quot;leslie freeman&quot;     &quot;daniel reynolds&quot;   
+[37] &quot;daniel reynolds&quot;    &quot;daniel reynolds&quot;    &quot;ashley howard&quot;     
+[40] &quot;daniel gonzalez&quot;    &quot;jamie potts&quot;        &quot;daniel gonzalez&quot;   
+[43] &quot;hayley griffin&quot;     &quot;lawrence bernard&quot;   &quot;danny anderson&quot;    
+[46] &quot;michael johnson md&quot; &quot;jessica myers&quot;      &quot;ashley howard&quot;     
+[49] &quot;matthew vasquez&quot;    &quot;craig atkinson&quot;    </code></pre>
 </div>
 </div>
 </section>
